@@ -1,5 +1,8 @@
 import React from 'react'
 import './Navigation.css';
+import { Wishlist } from '../common/Wishlist';
+import { AccountIcon } from '../common/AccountIcon';
+import { CartIcon } from '../common/CartIcon';
 
 const Navigation = () => {
     return (
@@ -31,8 +34,13 @@ const Navigation = () => {
 
             </div>
 
-            <div>
+            <div className="flex flex-wrap items-center gap-4">
                 {/* Action items  icons */}
+                <ul className="flex items-center gap-8">
+                    <li><button href="/"><Wishlist /></button></li>
+                    <li><button href="/"><AccountIcon /></button></li>
+                    <li><button href="/cart-items"><CartIcon /></button></li>
+                </ul>
             </div>
         </nav>
     )

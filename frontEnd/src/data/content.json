@@ -1,0 +1,47 @@
+{
+    "categories":[
+        {
+
+            
+            "title":"Feminino",
+            "data":[
+                {
+                    "title":"Hoodies & Sweetshirt",
+                    "description":"Explore Now!",
+                    "image": "./images/category-women-hoode.jpg"
+                },
+                {
+                    "title":"Hoodies & Sweetshirt",
+                    "description":"Explore Now!",
+                    "image": "./images/category-women-hoode.jpg"
+                },
+                {
+                    "title":"Hoodies & Sweetshirt",
+                    "description":"Explore Now!",
+                    "image": "./images/category-women-hoode.jpg"
+                }
+            ]
+        },
+        {
+            "title":"Masculino",
+            "data":[
+                {
+                    "title":"Camisetas",
+                    "description":"Explore Now!",
+                    "image": "./images/shirt.jpg"
+                },
+                {
+                    "title":"Hoodies & Sweetshirt",
+                    "description":"Explore Now!",
+                    "image": "./images/category-women-hoode.jpg"
+                },
+                {
+                    "title":"Hoodies & Sweetshirt",
+                    "description":"Explore Now!",
+                    "image": "./images/category-women-hoode.jpg"
+                }
+
+            ]
+        }
+    ]
+}
