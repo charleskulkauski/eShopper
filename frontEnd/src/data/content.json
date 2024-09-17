@@ -6,19 +6,24 @@
             "title":"Feminino",
             "data":[
                 {
-                    "title":"Hoodies & Sweetshirt",
-                    "description":"Explore Now!",
-                    "image": "./images/category-women-hoode.jpg"
+                    "title":"Camisetas",
+                    "description":"Explorar!",
+                    "image": "./images/camiseta-preta-feminina.png"
                 },
                 {
-                    "title":"Hoodies & Sweetshirt",
-                    "description":"Explore Now!",
-                    "image": "./images/category-women-hoode.jpg"
+                    "title":"Blusas de frio",
+                    "description":"Explorar!",
+                    "image": "./images/blusa-lisa.jpg"
                 },
                 {
-                    "title":"Hoodies & Sweetshirt",
-                    "description":"Explore Now!",
-                    "image": "./images/category-women-hoode.jpg"
+                    "title":"Shorts",
+                    "description":"Explorar!",
+                    "image": "./images/Shorts.png"
+                },
+                {
+                    "title":"Cropped",
+                    "description":"Explorar!",
+                    "image": "./images/cropped.png"
                 }
             ]
         },
@@ -27,18 +32,23 @@
             "data":[
                 {
                     "title":"Camisetas",
-                    "description":"Explore Now!",
-                    "image": "./images/shirt.jpg"
+                    "description":"Explorar!",
+                    "image": "./images/camiseta-preta.jpg"
                 },
                 {
-                    "title":"Hoodies & Sweetshirt",
-                    "description":"Explore Now!",
-                    "image": "./images/category-women-hoode.jpg"
+                    "title":"Camisas",
+                    "description":"Explorar!",
+                    "image": "./images/camiseta-verde.png"
                 },
                 {
-                    "title":"Hoodies & Sweetshirt",
-                    "description":"Explore Now!",
-                    "image": "./images/category-women-hoode.jpg"
+                    "title":"Blusas de frio",
+                    "description":"Exlorar!",
+                    "image": "./images/blusa-verde.png"
+                },
+                {
+                    "title":"Jaquetas",
+                    "description":"Exlorar!",
+                    "image": "./images/jaqueta-creme.png"
                 }
 
             ]

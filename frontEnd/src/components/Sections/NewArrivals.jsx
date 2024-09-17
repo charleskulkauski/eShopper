@@ -5,6 +5,9 @@ import Jeans from '../../img/jeans.png'
 import Dress from '../../img/dress.png'
 import Shirt from '../../img/shirt.png'
 import Tshirt from '../../img/t-shirt.png'
+import Regata from '../../img/regata.jpg'
+import BlusaRosa from '../../img/blusa-rosa.png'
+import Karpa from '../../img/karpa.jpg'
 import Carousel from 'react-multi-carousel'
 import "react-multi-carousel/lib/styles.css";
 
@@ -30,14 +33,24 @@ const items = [
     {
         'title': 'Jeans',
         imagePath: Jeans
-    }, {
-        'title': 'Shirts',
+    },
+ {
+    'title': 'Blusa Rosa',
+    imagePath: BlusaRosa
+}, {
+        'title': 'Camiseta',
         imagePath: Shirt
     }, {
-        'title': 'T-Shirts',
-        imagePath: Tshirt
+        'title': 'Karpa',
+        imagePath: Karpa
     }, {
-        'title': 'Dresses',
+        'title': 'Camisa xadrez',
+        imagePath: Tshirt
+    },{
+        'title': 'Regata',
+        imagePath: Regata
+    }, {
+        'title': 'Vestido Vermelho',
         imagePath: Dress
     }]
 

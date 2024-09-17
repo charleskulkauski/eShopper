@@ -6,7 +6,7 @@ const Category = ({title, data}) => {
   return (
     <>
       <SeactionHeading title={title}/>
-      <div className='px-8 '>
+      <div className='flex items-center px-8 flex-wrap'>
       {data && data?.map((item,index)=>{
         return (
             <Card title={item?.title} description={item?.description} imagePath={item?.image} 

@@ -15,10 +15,9 @@ const Navigation = () => {
             <div className="flex flex-wrap items-center gap-10">
                 {/* Nav items */}
                 <ul className="flex gap-14 text-gray-600 hover:text-black">
-                    <li className=""><a href="/">Shop</a></li>
-                    <li className=""><a href="/Men">Men</a></li>
-                    <li className=""><a href="/Women">Women</a></li>
-                    <li className=""><a href="/Kids">Kids</a></li>
+                    <li className=" text-red-600"><a href="/">Ofertas</a></li>
+                    <li className=""><a href="/Men">Masculino</a></li>
+                    <li className=""><a href="/Women">Feminino</a></li>
                 </ul>
             </div>
             <div className="flex justify-center">
@@ -26,8 +25,7 @@ const Navigation = () => {
                 <div className="border rounded flex overflow-hidden">
                     <div className="flex items-center justify-center px-4 border">
                             <svg className="h-4 w-4 text-gray-700" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" /></svg>
-                            <input type="text" className="px-4 py-2 outline-none" placeholder="Search" />
-                       
+                            <input type="text" className="px-4 py-2 outline-none" placeholder="Buscar" />
                     </div>
                 </div>
 

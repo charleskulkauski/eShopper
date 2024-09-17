@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 function SeactionHeading({title}) {
   return (
-    <div className='flex flex-wrap px-10 my-5'>
-        <div>
+    <div className='flex flex-wrap px-10 my-5 ites-center gap-2'>
+        <div className='border rounded border-1 bg-black w-2 h-10'>
 
         </div>
-        <p className='text-3xl'>{title}</p>
+        <p className='text-2xl'>{title}</p>
       
     </div>
   )
