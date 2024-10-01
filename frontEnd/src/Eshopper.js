@@ -9,7 +9,6 @@ import Footer from './components/Footer/Footer'
 const Eshopper = () => {
   return (
     <>
-      <Navigation />
       <HeroSection />
       <NewArrivals />
       {content?.categories && content?.categories?.map((item, index) => <Category key={item?.title+index} {...item} />)}
