@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Eshopper from './Eshopper';
+import Navigation from './components/Navigation/Navigation';
 import reportWebVitals from './reportWebVitals';
 import 'react-multi-carousel/lib/styles.css';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+export const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Eshopper />
+    <RouterProvider router={router}>
+    <Navigation />
+    <Eshopper/>
+    </RouterProvider>
   </React.StrictMode>
 );
 

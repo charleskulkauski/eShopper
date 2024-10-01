@@ -2,7 +2,7 @@
     "categories":[
         {
 
-            
+    
             "title":"Feminino",
             "data":[
                 {
@@ -53,5 +53,57 @@
 
             ]
         }
-    ]
+    ],
+
+    "footer":{
+        "items":[
+            {
+                "title":"Ajuda",
+                "list":[
+                    {
+                        "label":"Fale Conosco",
+                        "path":"/fale-conosco"
+                    },{
+                        "label":"Meus Pedidos",
+                        "path":"/meus-pedidos"
+                    },{
+                        "label":"Reembolso",
+                        "path":"/reembolso"
+                    },{
+                        "label":"FAQ",
+                        "path":"/faq"
+                    },{
+                        "label":"Trabalhe Conosco",
+                        "path":"/Trabalhe Conosco"
+                    }
+                ]
+            },{
+                "title":"Nossa Empresa",
+                "list":[
+                    {
+                        "label":"Sobre nós",
+                        "path": "/sobre"
+                    }
+                ]
+            },{
+                "title":"Mais Informações",
+                "list":[
+                    {
+                        "label":"Termos e Condições",
+                        "path": "/termos-e-condicoes"
+                    },{
+                        "label":"Politica de Privacidade",
+                        "path": "/politica-de-privacidade"
+                    },{
+                        "label":"Politica de Envio",
+                        "path": "/politica-de-envio"
+                    }
+                ]
+            },{
+                "title":"Localização",
+                "description":"Location Country - Inserir API Google"
+            }
+        ],
+        "copyright":"Copyright © 2024 eShopper"
+    }
 }
