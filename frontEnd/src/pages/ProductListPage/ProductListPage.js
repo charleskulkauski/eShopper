@@ -2,6 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react'
 import FilterIcon from '../../components/common/FilterIcon'
 import content from '../../data/content.json'
 import Categories from '../../components/Filters/Categories';
+import PriceFilter from '../../components/Filters/PriceFilter';
+import ColorsFilter from '../../components/Filters/ColorsFilter';
 
 const categories = content?.categories;
 
@@ -25,13 +27,26 @@ const categories = content?.categories;
             {/* Products Types*/}
             <p className='text-[16px] text-black mt-5'>Categorias</p>
             <Categories types={categoryContent?.types} />
+            <hr></hr>
           </div>
+          {/* Price */}
+          <PriceFilter />
+          <hr></hr>
+          {/* Colors */}
+          <ColorsFilter colors={categoryContent?.meta_data?.colors}/>
+
+          <hr></hr>
+          {/* Sizes */}
 
         </div>
         <div className='p-[15px]'>
           <p className='text-black text-lg'>{categoryContent?.description}</p>
           {/* Products */}
 
+
+        </div>
+          
+        <div>
 
         </div>
 
