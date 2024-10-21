@@ -4,6 +4,7 @@ import content from '../../data/content.json'
 import Categories from '../../components/Filters/Categories';
 import PriceFilter from '../../components/Filters/PriceFilter';
 import ColorsFilter from '../../components/Filters/ColorsFilter';
+import SizeFilter from '../../components/Filters/SizeFilter';
 
 const categories = content?.categories;
 
@@ -37,6 +38,7 @@ const categories = content?.categories;
 
           <hr></hr>
           {/* Sizes */}
+          <SizeFilter sizes={categoryContent?.meta_data?.sizes}/>
 
         </div>
         <div className='p-[15px]'>

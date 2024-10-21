@@ -9,7 +9,7 @@ const Category = ({title, data}) => {
       <div className='flex items-center px-8 flex-wrap'>
       {data && data?.map((item,index)=>{
         return (
-            <Card title={item?.title} description={item?.description} imagePath={item?.image} 
+            <Card key={index} title={item?.title} description={item?.description} imagePath={item?.image} 
             actionArrow={true} height={'280px'} width={'240px'}/>
         )
       })}

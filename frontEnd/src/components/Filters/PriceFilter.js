@@ -21,7 +21,6 @@ const PriceFilter = () => {
             <div className='border rounded-lg h-8 mt-4 max-w-[50%] w-[40%] flex items-center'><p className='pl-4 text-gray-600'>$</p> <input type='number' value={range?.max} className='outline-none px-4 text-gray-600' min={0} max="500" disabled placeholder='max'/></div>
        </div>
     </div>
-
   )
 }
 

@@ -13,22 +13,19 @@ export const colorSelector = {
     "Yellow": "#FFFF00",
     "Pink": "#FFC0CB",
     "Green": "#008000"
-
 }
 
-
 const ColorsFilter = ({colors}) => {
-
     const [appliedColors,setAppliedColors] = useState([]);
     const onClickDiv = useCallback((item)=>{
         if(appliedColors.indexOf(item) > -1){
             //SPLICE -> IndexOf busca um item, e splice remove apenas 1 item.
-            const newArray =  appliedColors.splice(appliedColors.indexOf(item), 1);
-            setAppliedColors(newArray);
+            //const newArray =  appliedColors.splice(appliedColors.indexOf(item), 1);
+            setAppliedColors(appliedColors?.filter(color => color !== item));
         }else{
             setAppliedColors([...appliedColors,item]);
         }
-    }, [appliedColors])
+    }, [appliedColors, setAppliedColors])
 
   return (
     <div className='flex flex-col mb-4'>
