@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import SvgFavourite from '../../components/common/SvgFavourite'
 
 
-const ProductCard = ({id,title,description,price,discount,rating,brandthumbnail,slug}) => {
+const ProductCard = ({id,title,description,price,discount,rating,brand,thumbnail,slug}) => {
   return (
     <div className='flex flex-col hover:scale-105 relative'>
 
