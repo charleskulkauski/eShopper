@@ -3,6 +3,7 @@ import Eshopper from './Eshopper'
 import { createBrowserRouter } from "react-router-dom";
 import ProductListPage from "./pages/ProductListPage/ProductListPage";
 import ProductDetails from "./pages/ProductDetailPage/ProductDetails";
+import { loadProductById } from "./routes/product";
 
 
 export const router = createBrowserRouter([
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
         },
         {
           path:"/product/:productId",
+          loader: loadProductById,
           element:<ProductDetails/>
         },
         {
