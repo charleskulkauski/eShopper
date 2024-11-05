@@ -6,6 +6,7 @@ import PriceFilter from '../../components/Filters/PriceFilter';
 import ColorsFilter from '../../components/Filters/ColorsFilter';
 import SizeFilter from '../../components/Filters/SizeFilter';
 import ProductCard from './ProductCard';
+import { Link } from 'react-router-dom';
 
 const categories = content?.categories;
 
@@ -16,7 +17,7 @@ const ProductListPage = ({ categoryType }) => {
   }, [categoryType]);
 
   const productListItems = useMemo(() => {
-    return content?.products?.filter((product) => product?.category_id ===  categoryContent?.id);
+    return content?.products?.filter((product) => product?.category_id === categoryContent?.id);
   }, [categoryContent]);
 
   return (
@@ -50,8 +51,8 @@ const ProductListPage = ({ categoryType }) => {
           <p className='text-black text-lg'>{categoryContent?.description}</p>
           {/* Products */}
           <div className='pt-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 px-2'>
-            {productListItems?.map((item, index)=>(
-              <ProductCard key={index} {...item}/>
+            {productListItems?.map((item, index) => (
+              <ProductCard key={index} {...item} />
             ))}
           </div>
 
@@ -62,7 +63,10 @@ const ProductListPage = ({ categoryType }) => {
         </div>
 
       </div>
+
+
     </div>
+
   )
 }
 
