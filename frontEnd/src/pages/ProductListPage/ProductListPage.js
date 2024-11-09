@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useMemo } from 'react'
 import FilterIcon from '../../components/common/FilterIcon'
 import content from '../../data/content.json'
 import Categories from '../../components/Filters/Categories';
@@ -6,7 +6,6 @@ import PriceFilter from '../../components/Filters/PriceFilter';
 import ColorsFilter from '../../components/Filters/ColorsFilter';
 import SizeFilter from '../../components/Filters/SizeFilter';
 import ProductCard from './ProductCard';
-import { Link } from 'react-router-dom';
 
 const categories = content?.categories;
 
@@ -52,8 +51,11 @@ const ProductListPage = ({ categoryType }) => {
           {/* Products */}
           <div className='pt-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 px-2'>
             {productListItems?.map((item, index) => (
-              <ProductCard key={index} {...item} />
+              
+              <ProductCard key={item?.category_id+"_"+index} {...item} />
+              
             ))}
+            
           </div>
 
         </div>
