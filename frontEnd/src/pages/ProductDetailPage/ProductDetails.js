@@ -36,13 +36,13 @@ const extraSection = [
 
 const ProductDetails = () => {
   const { product } = useLoaderData();
-  const [image, setImage] = useState(product?.images[0]?.startsWith('http') ? product?.images[0] : product?.thumbnail);
+  const [image, setImage] = useState();
   const [BreadCrumbLinks, setBreadCrumLink] = useState([]);
 
 
 
-  const productListItems = useMemo(()=>{
-    return content?.products?.filter((item)=> item?.type_id === product?.type_id)
+  const similiarProducts = useMemo(()=>{
+    return content?.products?.filter(((item)=> item?.type_id === product?.type_id && item?.id !== product?.id));
   }, [product]);
 
   const productCategory = useMemo(() => {
@@ -50,6 +50,10 @@ const ProductDetails = () => {
   }, [product, categories])
 
   useEffect(() => {
+
+    setImage(product?.images[0]?.startsWith('http') ? product?.images[0] : product?.thumbnail);
+    setBreadCrumLink([])
+
     const arrayLinks = [{ title: 'Shop', path: '/' }, {
       title: productCategory?.name,
       path: productCategory?.path
@@ -142,12 +146,12 @@ const ProductDetails = () => {
         <SeactionHeading title={'Similar Products'} />
         <div className='flex px-10'>
         <div className='pt-4 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8 px-2 pb-10'>
-            {productListItems?.map((item, index) => (
+            {similiarProducts?.map((item, index) => (
               
               <ProductCard key={item?.category_id+"_"+index} {...item} />
               
             ))}
-            
+            {!similiarProducts?.length && <p>Products not Found!</p>}
           </div>
       </div>
     </div>
