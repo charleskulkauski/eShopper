@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.repository.Temporal;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -35,6 +35,16 @@ public class Product {
     @Temporal(TemporalType.TIMESTAMP)
     private java.util.Date updatedAt;
 
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private List<ProductVariant> productVariants;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private Category category;
+
+    @ManyToOne
+    @JoinColumn(name = "categoryType_id", nullable = false)
+
     @PrePersist
     protected void onCreate(){
         createdAt = new java.util.Date();
@@ -45,6 +55,8 @@ public class Product {
     protected void onUpdate(){
         updatedAt = new java.util.Date();
     }
+
+
 
 
 
